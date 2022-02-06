@@ -1,1 +1,1 @@
-# Cryptographic Algorithms.
+# Crypto Algorithms.
