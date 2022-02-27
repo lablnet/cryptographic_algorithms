@@ -16,6 +16,6 @@ def encode_decode(text, type="encode", key=1):
         t += b    
     return t
 
-# encode = encode_decode(text, "encode", 1)
-# decode = encode_decode(encode, "decode", 2)
-# print(text, encode, decode)
+encode = encode_decode(text, "encode", 1)
+decode = encode_decode(encode, "decode", 1)
+print(text, encode, decode)
