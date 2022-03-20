@@ -232,7 +232,7 @@ def generate_keys_reverse(key: str) -> list:
     return K
 
 
-# Function to perform R expend permutations.
+# Function to perform E expend permutations. It provides difusion.
 def r_expend_permutation(R: list) -> list:
     return [R[i - 1] for i in E]
 
@@ -242,7 +242,7 @@ def x_or(a: list, b: list) -> list:
     return [int(x) ^ int(y) for x, y in zip(a, b)]
 
 
-# Function to perform S-box permutations.
+# Function to perform S-box permutations. It provides confusion.
 def s_substitution(R: list):
     new_r = []
     for i in range(0, 8):
@@ -255,7 +255,7 @@ def s_substitution(R: list):
 
 # Function to perform f function operations.
 def f_function(R: list, K: list) -> list:
-    new_r = r_expend_permutation(R)
+    new_r = r_expend_permutation(R) # Expend 32 bits to 48 bits.
     r_xor = x_or(new_r, K)
     s = s_substitution(r_xor)
     p = p_permutation(s)
@@ -267,10 +267,10 @@ def des(plaintext: str, K: list) -> str:
     L, R = ip1_permutation(plaintext)
     for i in range(16):
         old_r = R
-        p = f_function(R, K[i])
-        R = x_or(L, p)
+        f_output = f_function(R, K[i])
+        R = x_or(L, f_output)
         L = old_r
-    L, R = ipi_permutation(R + L)
+    L, R = ipi_permutation(R + L) # swapped L and R and perform final permutations.
     return ''.join(str(x) for x in L + R)
 
 
