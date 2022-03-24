@@ -255,7 +255,7 @@ def s_substitution(R: list):
 
 # Function to perform f function operations.
 def f_function(R: list, K: list) -> list:
-    new_r = r_expend_permutation(R) # Expend 32 bits to 48 bits.
+    new_r = r_expend_permutation(R)  # Expend 32 bits to 48 bits.
     r_xor = x_or(new_r, K)
     s = s_substitution(r_xor)
     p = p_permutation(s)
@@ -270,11 +270,12 @@ def des(plaintext: str, K: list) -> str:
         f_output = f_function(R, K[i])
         R = x_or(L, f_output)
         L = old_r
-    L, R = ipi_permutation(R + L) # swapped L and R and perform final permutations.
+    # swapped L and R and perform final permutations.
+    L, R = ipi_permutation(R + L)
     return ''.join(str(x) for x in L + R)
 
 
-# Function to perform DES decryption.
+# Function to perform DES encryption.
 def des_encrypt(plaintext: str, key: str) -> str:
     ciphers = ""
     for text in convert_str_to_64_bit_chunks(plaintext):

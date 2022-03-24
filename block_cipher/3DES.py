@@ -10,7 +10,7 @@ from DES import (
 )
 
 
-# Function to perform 3DES decryption.
+# Function to perform 3DES encryption.
 def triple_des_encrypt(plaintext: str, key1: str, key2: str, key3: str) -> str:
     ciphers = ""
     for text in convert_str_to_64_bit_chunks(plaintext):

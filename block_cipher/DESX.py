@@ -11,7 +11,7 @@ from DES import (
 )
 
 
-# Function to perform DESX decryption.
+# Function to perform DESX encryption.
 def desx_encrypt(plaintext: str, key1: str, key2: str) -> str:
     ciphers = ""
     for text in convert_str_to_64_bit_chunks(plaintext):
