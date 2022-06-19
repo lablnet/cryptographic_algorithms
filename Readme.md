@@ -28,7 +28,7 @@ I am following these Courses to learn more about the algorithms:
 You're welcome to contribute to this project.  
 You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/cryptographic_algorithms/blob/main/CONTRIBUTING.md)  
 
-## Disclaimer-
+## Disclaimer
 - Do not use this for illegal purposes.
 - Use this at your own risk.
 - Do not use this for production but only for undertstading the algorithms.
