@@ -1,2 +1,0 @@
-This is a text document, having text on it.
-Let's try to hash it.
