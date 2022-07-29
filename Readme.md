@@ -12,6 +12,8 @@ I have implemented the following algorithms:
 - [x] [DES](https://en.wikipedia.org/wiki/DES_supplementary_material)
 - [x] [3DES](https://en.wikipedia.org/wiki/Triple_DES)
 - [x] [DESX](https://en.wikipedia.org/wiki/DES_X)
+- [x] Block Cipher Modes
+    - [x] ECB (Electronic Code Book)
   
 
 I am working on the following algorithms:
