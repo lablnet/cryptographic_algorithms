@@ -277,25 +277,22 @@ def des(plaintext: str, K: list) -> str:
 
 # Function to perform DES encryption.
 def des_encrypt(plaintext: str, key: str) -> str:
-    ciphers = ""
-    for text in convert_str_to_64_bit_chunks(plaintext):
-        ciphers += des(str_to_binary(text), generate_keys(key))
+    ciphers = des(str_to_binary(plaintext), generate_keys(key))
     return bin_to_hex(ciphers)
 
 
 # Function to perform DES decryption.
 def des_decrypt(ciphertext: str, key: str) -> str:
-    plaintext = ""
-    for cipher in convert_str_to_64_bit_chunks(bin_to_str(hex_to_bin(ciphertext))):
-        plaintext += des(str_to_binary(cipher), generate_keys_reverse(key))
+    plaintext = des(hex_to_bin(ciphertext), generate_keys_reverse(key))
     return bin_to_str(plaintext)
 
 
 if __name__ == "__main__":
-    text = "A quick brown fox jumps over the lazy dog, and then he goes to sleep!!!!"
+    text = "Hi, Umer"
     key = "Cg%6xsvA"  # generate_key()
     cipher = des_encrypt(text, key)
     plaintext = des_decrypt(cipher, key)
+    print("Plaintext:", text)
     print("key", key)
     print("Cipher:", cipher)
     print("Dec Plaintext:", plaintext)
