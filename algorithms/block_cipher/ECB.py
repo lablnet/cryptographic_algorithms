@@ -12,9 +12,8 @@ from DES import (
     hex_to_bin
 )
 
+
 # Function to perform DES encryption.
-
-
 def encrypt(plaintext: str, key: str) -> str:
     ciphers = ""
     for text in convert_str_to_64_bit_chunks(plaintext):
@@ -31,7 +30,7 @@ def decrypt(ciphertext: str, key: str) -> str:
 
 
 if __name__ == "__main__":
-    text = "Hi, A quick brown fox jumps over the lazy dog, and then he goes to sleep"
+    text = "Hello, World! this is the secet message sending over the network"
     key = "Cg%6xsvA"  # generate_key()
     cipher = encrypt(text, key)
     plaintext = decrypt(cipher, key)
