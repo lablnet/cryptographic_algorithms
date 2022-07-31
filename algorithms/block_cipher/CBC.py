@@ -34,7 +34,7 @@ def encrypt(plaintext: str, key: str) -> str:
 
     for i in range(1, len(x)):
         # DEF: Yi = enc((Xi ⊕ Yi), key)
-        # Xor the current block with the previous ciphertext, then encrypt it
+        # Xor the current block with the previous ciphertext, then encrypt it.
         Yi = x_or(y, str_to_binary(x[i]))
         Yi = des(Yi, generate_keys(key))
         y = Yi
@@ -50,13 +50,16 @@ def decrypt(ciphertext: str, key: str) -> str:
     # Convert the ciphertext into 64-bit chunks
     y = convert_str_to_64_bit_chunks(bin_to_str(hex_to_bin(ciphertext)))
 
-    # get first 64 bit block, then convert it to binary and xor with IV
+    # DEF: X1 = dec(Y1, key) ⊕ IV
+    # Get first 64 bit block, encrypt it, then xor with IV.
     x1 = des(str_to_binary(y[0]), generate_keys_reverse(key))
     x1 = x_or(x1, str_to_binary(IV))
     x1 = "".join(str(i) for i in x1)
     plaintext = x1
 
     for i in range(1, len(y)):
+        # DEF: Xi = dec(Yi, key) ⊕ Y[i-1]
+        # Decrypt the current block, then xor with the previous ciphertext.
         Xi = des(str_to_binary(y[i]), generate_keys_reverse(key))
         Xi = x_or(Xi, str_to_binary(y[i - 1]))
         x1 = "".join(str(i) for i in Xi)
