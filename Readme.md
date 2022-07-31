@@ -12,6 +12,7 @@ I have implemented the following algorithms:
 - [x] [DESX](https://en.wikipedia.org/wiki/DES_X)
 - [x] Block Cipher Modes
     - [x] ECB (Electronic Code Book)
+    - [x] CBC (Cipher Block Chaining)
   
 
 I am working on the following algorithms:
