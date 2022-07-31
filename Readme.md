@@ -1,5 +1,3 @@
-[![Codespaces Prebuilds](https://github.com/lablnet/cryptographic_algorithms/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/lablnet/cryptographic_algorithms/actions/workflows/codespaces/create_codespaces_prebuilds)
-
 # Cryptographic Algorithms.
 
 My own implementation of the [Cryptographic Algorithms](https://en.wikipedia.org/wiki/Cryptographic_algorithm) in Python.
