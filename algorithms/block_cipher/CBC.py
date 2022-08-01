@@ -1,5 +1,6 @@
 # Block Cipher Mode: CBC (Cipher Block Channing)
 # In CBC same key is used for encryption of larger blocks of data but we add a random initialization vector to each block.
+# The CBC mode is Probabilistic.
 # Undeerstanding cryptography by christof Paar, Page: 143
 
 from DES import (
@@ -16,6 +17,7 @@ from DES import (
 
 
 # IV is the initialization vector that add the randomness to the ciphertext.
+# If we generate new IV on every time, the CBC mode becomes Probabilistic.
 IV = "11111111"
 
 
