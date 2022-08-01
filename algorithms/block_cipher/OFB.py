@@ -37,7 +37,7 @@ def encrypt(text: str, key: str) -> str:
 
     for i in range(1, len(v)):
         # DEF: Si = enc(Si-1) and Vi = Si ⊕ Vi-1
-        # Encrypt the previous ciphertext and xor with the current block.
+        # Encrypt the key stream with previous key stream and xor with the current block.
         Si = des(s1, generate_keys(key))
         Vi = x_or(Si, str_to_binary(v[i]))
         s1 = Si
