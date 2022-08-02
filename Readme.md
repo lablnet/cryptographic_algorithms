@@ -13,6 +13,8 @@ I have implemented the following algorithms:
 - [x] Block Cipher Modes
     - [x] ECB (Electronic Code Book)
     - [x] CBC (Cipher Block Chaining)
+    - [x] OFB (Output Feedback Mode)
+    - [x] CTR (Counter Mode)
   
 
 I am working on the following algorithms:
