@@ -24,6 +24,8 @@ def extended_euclidean_r(a: float, b: float):
 
 # Extended Euclidean algorithm for gcd of two numbers, iterative.
 def extended_euclidean_i(a: float, b: float):
+    # Book Page: 176.
+    # Initial Values.
     s0, s1 = 1, 0
     t0, t1 = 0, 1
     while b != 0:
