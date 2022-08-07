@@ -1,6 +1,6 @@
 | ⚠️ Disclaimer                                                                    |
 |:-----------------------------------------------------------------------------|
-| 1. **Do not use this for production but only for undertstading the algorithms.** <br />2. Use this at your own risk but do not for illegal purposes <br />3. Only use Crypto primitive algorithms for cryptographic purpose.|
+| 1. **Do not use this for production but only for undertstading the algorithms.** <br />2. Use this at your own risk, but do not for illegal purposes. <br />3. Only use Crypto primitive algorithms for cryptographic purpose.|
 
 # Cryptographic Algorithms.
 
