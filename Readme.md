@@ -1,3 +1,7 @@
+| ⚠️ Disclaimer                                                                    |
+|:-----------------------------------------------------------------------------|
+| 1. **Do not use this for production but only for undertstading the algorithms.** <br />2. Use this at your own risk but do not for illegal purposes <br />3. Only use Crypto primitive algorithms for cryptographic purpose.|
+
 # Cryptographic Algorithms.
 
 My own implementation of the [Cryptographic Algorithms](https://en.wikipedia.org/wiki/Cryptographic_algorithm) in Python.
@@ -29,10 +33,4 @@ I am following these Courses to learn more about the algorithms:
 
 ## Contribution  
 You're welcome to contribute to this project.  
-You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/cryptographic_algorithms/blob/main/CONTRIBUTING.md)  
-
-## Disclaimer
-- Do not use this for illegal purposes.
-- Use this at your own risk.
-- Do not use this for production but only for undertstading the algorithms.
-- Only use Crypto primitive algorithms for encryption and decryption.
+You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/cryptographic_algorithms/blob/main/CONTRIBUTING.md) 
