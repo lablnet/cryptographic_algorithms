@@ -10,17 +10,15 @@ I have implemented the following algorithms:
 - [x] [DES](https://en.wikipedia.org/wiki/DES_supplementary_material)
 - [x] [3DES](https://en.wikipedia.org/wiki/Triple_DES)
 - [x] [DESX](https://en.wikipedia.org/wiki/DES_X)
+- [ ] [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 - [x] Block Cipher Modes
     - [x] ECB (Electronic Code Book)
     - [x] CBC (Cipher Block Chaining)
     - [x] OFB (Output Feedback Mode)
     - [x] CTR (Counter Mode)
+- [ ] Public Key Encryption.
+    - [x] [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
   
-
-I am working on the following algorithms:
-
-- [ ] [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-- [ ] [RSA](https://en.wikipedia.org/wiki/RSA)
 
 I am following these Courses to learn more about the algorithms:
 1. [Cryptography 1](https://www.coursera.org/learn/crypto)

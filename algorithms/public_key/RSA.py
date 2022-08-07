@@ -2,7 +2,7 @@
 RSA.py RSA implementation.
 The RSA algorithm is an asymmetric cryptographic algorithm.
 In RSA the data is encrypted using the public key and decrypted using the private key.
-It is a public/private key encryption algorithm.
+It is a public key encryption algorithm [public-key cryptography].
 :author: Muhammad Umer Farooq
 """
 import sys
