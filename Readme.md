@@ -21,8 +21,9 @@ I have implemented the following algorithms:
     - [x] OFB (Output Feedback Mode)
     - [x] CTR (Counter Mode)
 - [ ] Public Key Encryption.
-    - [x] [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-  
+    - [x] [RSA](./algorithms/public_key/RSA.py)
+    - [x] [RSA-CRT](./algorithms/public_key/RSA_CRT.py)
+
 
 I am following these Courses to learn more about the algorithms:
 1. [Cryptography 1](https://www.coursera.org/learn/crypto)
