@@ -7,19 +7,19 @@
 My own implementation of the [Cryptographic Algorithms](https://en.wikipedia.org/wiki/Cryptographic_algorithm) in Python.
 
 I have implemented the following algorithms:
-- [x] [Substitution Cipher](https://en.wikipedia.org/wiki/Substitution_cipher)
-- [x] [Stream Cipher](https://en.wikipedia.org/wiki/Stream_cipher)
-- [x] [Affine Cipher](https://en.wikipedia.org/wiki/Affine_cipher).
-- [x] [Shift Cipher](https://en.wikipedia.org/wiki/Shift_cipher)
-- [x] [DES](https://en.wikipedia.org/wiki/DES_supplementary_material)
-- [x] [3DES](https://en.wikipedia.org/wiki/Triple_DES)
-- [x] [DESX](https://en.wikipedia.org/wiki/DES_X)
+- [x] [Substitution Cipher](./algorithms/classical/simpleEncytption.py)
+- [x] [Stream Cipher](./algorithms/stream_cipher/streamCipher.py)
+- [x] [Affine Cipher](./algorithms/classical/AffineCipher.py).
+- [x] [Shift Cipher](./algorithms/classical/ShiftCipher.py)
+- [x] [DES](./algorithms/block_cipher/DES.py)
+- [x] [3DES](./algorithms/block_cipher/3DES.py)
+- [x] [DESX](./algorithms/block_cipher/DESX.py)
 - [ ] [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 - [x] Block Cipher Modes
-    - [x] ECB (Electronic Code Book)
-    - [x] CBC (Cipher Block Chaining)
-    - [x] OFB (Output Feedback Mode)
-    - [x] CTR (Counter Mode)
+    - [x] [ECB (Electronic Code Book)](./algorithms/block_cipher/ECB.py)
+    - [x] [CBC (Cipher Block Chaining)](./algorithms/block_cipher/CBC.py)
+    - [x] [OFB (Output Feedback Mode)](./algorithms/block_cipher/OFB.py)
+    - [x] [CTR (Counter Mode)](./algorithms/block_cipher/CTR.py)
 - [ ] Public Key Encryption.
     - [x] [RSA](./algorithms/public_key/RSA.py)
     - [x] [RSA-CRT](./algorithms/public_key/RSA_CRT.py)
