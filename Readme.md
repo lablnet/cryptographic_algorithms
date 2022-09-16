@@ -23,7 +23,7 @@ I have implemented the following algorithms:
 - [ ] Public Key Encryption.
     - [x] [RSA](./algorithms/public_key/RSA.py)
     - [x] [RSA-CRT](./algorithms/public_key/RSA_CRT.py)
-
+    - [x] [Diffie-Hellman](./algorithms/public_key/diffie_hellman.py)
 
 I am following these Courses to learn more about the algorithms:
 1. [Cryptography 1](https://www.coursera.org/learn/crypto)
